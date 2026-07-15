@@ -1,77 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OHLA USA IT Support</title>
+
+<title>OHLA USA | IT Support</title>
 
 <style>
-body{
+
+*{
     margin:0;
-    font-family:Segoe UI, Arial, sans-serif;
-    background:#f4f7fb;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI,Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#eef5fb,#dceaf5);
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    padding:30px;
 }
 
 .container{
-    width:90%;
-    max-width:600px;
-    background:#ffffff;
-    padding:40px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-    text-align:center;
+
+    width:100%;
+    max-width:700px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
 }
 
-.logo{
-    font-size:42px;
-    margin-bottom:10px;
+.header{
+
+    background:#003A80;
+    text-align:center;
+    padding:35px;
+
+}
+
+.header img{
+
+    width:330px;
+    max-width:100%;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+
+}
+
+.content{
+
+    padding:45px;
+
 }
 
 h1{
-    color:#004B8D;
+
+    text-align:center;
+    color:#003A80;
+    font-size:36px;
     margin-bottom:10px;
+
 }
 
-p{
-    color:#555;
-    margin-bottom:35px;
+.subtitle{
+
+    text-align:center;
+    color:#666;
     font-size:18px;
+    margin-bottom:40px;
+    line-height:1.5;
+
 }
 
 .card{
-    background:#f8f9fa;
-    border-left:5px solid #004B8D;
-    border-radius:10px;
-    padding:20px;
-    margin-bottom:20px;
-    text-align:left;
+
+    background:#F8FAFC;
+
+    border-left:6px solid #00A6B5;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
 }
 
 .card h2{
-    margin-top:0;
-    color:#004B8D;
+
+    color:#003A80;
+
+    margin-bottom:18px;
+
 }
 
-a{
-    color:#0066cc;
-    font-size:18px;
+.button{
+
+    display:block;
+
+    width:100%;
+
+    text-align:center;
+
     text-decoration:none;
-    word-break:break-word;
+
+    background:#003A80;
+
+    color:white;
+
+    padding:16px;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.25s;
+
 }
 
-a:hover{
-    text-decoration:underline;
+.button:hover{
+
+    background:#0055b8;
+
+}
+
+.phone{
+
+    background:#00A6B5;
+
+}
+
+.phone:hover{
+
+    background:#008d99;
+
+}
+
+.notice{
+
+    background:#eef8ff;
+
+    border:1px solid #c8dff6;
+
+    border-radius:10px;
+
+    padding:18px;
+
+    color:#555;
+
+    text-align:center;
+
+    margin-top:35px;
+
+    font-size:15px;
+
+    line-height:1.6;
+
 }
 
 .footer{
-    margin-top:30px;
-    color:#888;
+
+    background:#F5F7FA;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#666;
+
     font-size:14px;
+
+    border-top:1px solid #ddd;
+
 }
+
+.footer strong{
+
+    color:#003A80;
+
+}
+
 </style>
 
 </head>
@@ -80,32 +201,68 @@ a:hover{
 
 <div class="container">
 
-<div class="logo">💻</div>
+<div class="header">
+
+<img src="ohla-logo.jpg" alt="OHLA USA">
+
+</div>
+
+<div class="content">
 
 <h1>Need IT Support?</h1>
 
-<p>Please contact the OHLA IT Helpdesk.</p>
+<p class="subtitle">
+
+If you need assistance with your OHLA-issued computer,
+laptop, phone, or other technology,
+our Information Technology team is ready to help.
+
+</p>
 
 <div class="card">
-<h2>📧 Email</h2>
 
-<a href="mailto:helpdesk@ohla-usa.com">
-helpdesk@ohla-usa.com
+<h2>📧 Email IT Helpdesk</h2>
+
+<a class="button"
+
+href="mailto:helpdesk@ohla-usa.com?subject=IT%20Support%20Request">
+
+Email Helpdesk
+
 </a>
 
 </div>
 
 <div class="card">
-<h2>📞 Phone</h2>
 
-<a href="tel:+17185542388">
+<h2>📞 Call IT Helpdesk</h2>
+
+<a class="button phone"
+
+href="tel:+17185542388">
+
 (718) 554-2388
+
 </a>
+
+</div>
+
+<div class="notice">
+
+<strong>Need immediate assistance?</strong><br><br>
+
+Please include your name, location, and a brief description of the issue when contacting the Helpdesk to help us assist you as quickly as possible.
+
+</div>
 
 </div>
 
 <div class="footer">
-OHLA USA Information Technology
+
+<strong>OHLA USA Information Technology</strong><br>
+
+Providing secure and reliable technology support.
+
 </div>
 
 </div>
